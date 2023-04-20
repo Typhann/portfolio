@@ -4,10 +4,15 @@ $backgroundColor: #131312;
 
 $gradientColor: linear-gradient(90deg, #00FFF0 -18.87%, #E2FF6C 44.08%, #FFC700 108.35%);
 
-// $mainColor:;
+$header: clamp(3.6rem, 5vw, 4.8rem);
 
-// $header:;
+$subheader: clamp(2.4rem, 2.5vw, 3.2rem);
 
-// $subheader:;
+$text: clamp(1.2rem, 2.5vw, 1.6rem);
 
-// $text:;
+@mixin flexCenter($direction){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
