@@ -1,4 +1,5 @@
 @import './variables';
+@import './reset';
 
 h1{
   font-family: $font;
@@ -6,6 +7,32 @@ h1{
 
 
 body{
-  // background: $backgroundColor;
+  background: $backgroundColor;
 }
+
+
+
+h1{
+  background: $gradientColor;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 72px;
+  white-space: pre-line;
+  // background-clip: text;
+  // text-fill-color: transparent;
+}
+
+h1 span{
+  display: block;
+}
+
+#root{
+  background: radial-gradient(44.07% 107.38% at 85.73% 79.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
+  height: 100vh;
+}
+
+
+
+
+
 
