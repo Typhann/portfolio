@@ -10,6 +10,7 @@ body{
   // flex-direction: column;
   // justify-content: center;
   // align-items: center;
+  overflow: hidden;
   font-size: 62.5%;
 }
 
@@ -17,27 +18,40 @@ body{
   max-width: 1280px;
   // border: 2px solid blue;
   margin: 0 auto;
+  // position: absolute;
 }
 
+h2,h3,h4,p,a, ul {
+  color: $blue;
+  li{
+    font-size: $smallText;
+  }
+}
 
 h1{
   background: $gradientColor;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: $header;
-  // white-space: pre-line;
-  // background-clip: text;
+  background-clip: text;
   // text-fill-color: transparent;
+}
+h2{
+  font-size: $subheader;
+}
+h3,p{
+  font-size: $text;
+}
+
+h4{
+  font-size: $smallText;
 }
 
 h1 span{
   display: block;
-}
-
-#root{
-  height: 100vh;  
-  background: radial-gradient(44.07% 107.38% at 85.73% 79.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
-  // border: 2px solid red;
+   &:nth-child(2){
+    margin-top: -2rem;
+  }
 }
 
 header{
@@ -48,11 +62,14 @@ header{
   font-size: 1.2rem;
   font-weight: 700;
   padding: 2.5rem;
+  // position: absolute;
+  // z-index: 1;
   // max-width: 1280px;
 }
 
 main{
   @include flexCenter(column);
+  width: 100%;
   padding: 5rem;
   // max-width: 1280px;
 }
@@ -60,15 +77,26 @@ main{
 .hero{
   display: flex;
   > *{
-    padding: 2rem;
-    margin-right: 5rem;
+    // padding: 5rem;
+    // margin-right: 5rem;
+    // flex-grow: auto;
+    min-width: 50%;
     // border: 2px solid red;
   }
 }
 
-header a, h2{
+.portfolio-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+  // border: 1px solid rgb(13, 123, 39);
+  // width: 200%;
+}
+
+header a{
   margin: 0.5rem;
-  color: #8df8f3;
 }
 
 p{
@@ -84,9 +112,75 @@ p{
   margin-top: 5rem;
   font-size: 1.25rem;
   color: black;
+  margin: 0 auto;
+}
+
+.gradient{
+  height: 260vh;  
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  background: radial-gradient(44.07% 107.38% at 85.73% 79.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
+  // background: radial-gradient(44.07% 107.38% at 15.73% 99.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
 }
 
 
+// .glass-container{
+//   position: absolute;
+//   top: 0;
+//   width: 600px;
+//   height: 500px;
+//   background: rgba(40, 40, 40, 0.1);
+//   border-radius: 16px;
+//   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+//   backdrop-filter: blur(20px);
+//   -webkit-backdrop-filter: blur(20px);
+//   z-index: -1;
+// }
 
+.outer-container{
+  // position: relative;
+  width: 50%;
+  height: 500px;
+  background: rgba(40, 40, 40, 0.15);
+  // background: rgba(6, 6, 6, 0.1);
+  border-radius: 16px;
+  // margin-top: -200px;
+  // margin-left: 30px;
+  padding-bottom: 2rem;
+  overflow: auto;
+  >*{
+    // border: 1px solid green;
+    padding: 1rem;
+  }
+  max-height: 350px;
+}
 
+.links{
+  display: flex;
+  li{
+    margin: 0.5rem 0.5rem 0rem 0rem;
+    padding: 0.25rem;
+    border-radius: 8px;
+    border: 1px solid rgb(78, 77, 77);
+  }
+}
 
+h2{
+  color: #2FCCEE;
+}
+
+section{
+  // border: 2px solid red;
+  // width: 53.5%;
+  // background-color: #1b1919;
+  border-radius: 25px;
+  // backdrop-filter: blur(20px);
+  // -webkit-backdrop-filter: blur(20px);
+  margin: 0.5rem;
+  &:hover{
+    background-color: #1c1b1b;
+    // background-color: #171717;
+  }
+  // position: absolute;
+}

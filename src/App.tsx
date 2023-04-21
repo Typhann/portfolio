@@ -4,14 +4,14 @@ import {
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
-  Route,
-  Link
+  Route
 } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Layout from './components/Layout';
+
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route path="/" element={<Layout />}>

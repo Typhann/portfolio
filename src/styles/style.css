@@ -6,9 +6,31 @@
   text-decoration: none;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1b1919;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #151414;
+  border-radius: 10px;
+  border: 3px solid #1b1919;
+}
+
 body {
   background: #131312;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
   font-size: 62.5%;
 }
 
@@ -17,20 +39,38 @@ body {
   margin: 0 auto;
 }
 
+h2, h3, h4, p, a, ul {
+  color: #8df8f3;
+}
+h2 li, h3 li, h4 li, p li, a li, ul li {
+  font-size: clamp(0.6rem, 1.5vw, 0.8rem);
+}
+
 h1 {
   background: linear-gradient(90deg, #00FFF0 -18.87%, #E2FF6C 44.08%, #FFC700 108.35%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: clamp(3.6rem, 5vw, 4.8rem);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  background-clip: text;
+}
+
+h2 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+}
+
+h3, p {
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+
+h4 {
+  font-size: clamp(0.6rem, 1.5vw, 0.8rem);
 }
 
 h1 span {
   display: block;
 }
-
-#root {
-  height: 100vh;
-  background: radial-gradient(44.07% 107.38% at 85.73% 79.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
+h1 span:nth-child(2) {
+  margin-top: -2rem;
 }
 
 header {
@@ -48,6 +88,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   padding: 5rem;
 }
 
@@ -55,17 +96,23 @@ main {
   display: flex;
 }
 .hero > * {
-  padding: 2rem;
-  margin-right: 5rem;
+  min-width: 50%;
 }
 
-header a, h2 {
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+header a {
   margin: 0.5rem;
-  color: #8df8f3;
 }
 
 p {
-  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
 }
 
 .button {
@@ -81,4 +128,48 @@ p {
   margin-top: 5rem;
   font-size: 1.25rem;
   color: black;
+  margin: 0 auto;
+}
+
+.gradient {
+  height: 260vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  background: radial-gradient(44.07% 107.38% at 85.73% 79.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
+}
+
+.outer-container {
+  width: 50%;
+  height: 500px;
+  background: rgba(40, 40, 40, 0.15);
+  border-radius: 16px;
+  padding-bottom: 2rem;
+  overflow: auto;
+  max-height: 350px;
+}
+.outer-container > * {
+  padding: 1rem;
+}
+
+.links {
+  display: flex;
+}
+.links li {
+  margin: 0.5rem 0.5rem 0rem 0rem;
+  padding: 0.25rem;
+  border-radius: 8px;
+  border: 1px solid rgb(78, 77, 77);
+}
+
+h2 {
+  color: #2FCCEE;
+}
+
+section {
+  border-radius: 25px;
+  margin: 0.5rem;
+}
+section:hover {
+  background-color: #1c1b1b;
 }/*# sourceMappingURL=style.css.map */
