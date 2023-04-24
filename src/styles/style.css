@@ -99,7 +99,7 @@ main {
   min-width: 50%;
 }
 
-.portfolio-container {
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +139,7 @@ p {
   background: radial-gradient(44.07% 107.38% at 85.73% 79.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
 }
 
-.outer-container {
+.scroll-container {
   width: 50%;
   height: 500px;
   background: rgba(40, 40, 40, 0.15);
@@ -148,7 +148,7 @@ p {
   overflow: auto;
   max-height: 350px;
 }
-.outer-container > * {
+.scroll-container > * {
   padding: 1rem;
 }
 
@@ -172,4 +172,17 @@ section {
 }
 section:hover {
   background-color: #1c1b1b;
+}
+
+.about-nav {
+  margin: 1rem 1rem 1rem 0rem;
+}
+.about-nav > a {
+  padding: 0.5rem;
+  margin: 0.25rem;
+  background-color: #242424;
+  border-radius: 12px;
+}
+.about-nav > a:hover {
+  background-color: #323232;
 }/*# sourceMappingURL=style.css.map */

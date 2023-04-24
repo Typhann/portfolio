@@ -11,8 +11,8 @@ export default function Projects(){
       animate={{opacity: 1}} 
       transition={{duration: 0.75, ease: "easeOut"}}>
         <h1>Projects</h1>     
-        <div className="portfolio-container">
-          <div className="outer-container">
+        <div className="main-container">
+          <div className="scroll-container">
           <section>
             <h2>¡WAKE UP STHMLM!</h2>
             <h3>Gym in central Stockholm</h3>
