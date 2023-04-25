@@ -5,7 +5,7 @@ import reactLogo from "../assets/react.png"
 export default function Projects(){
   return(
     <>
-      <div className="gradient"></div>
+    <div className="gradient"></div>
       <motion.div 
       initial={{opacity: 0}} 
       animate={{opacity: 1}} 
@@ -17,70 +17,70 @@ export default function Projects(){
             <h2>¡WAKE UP STHMLM!</h2>
             <h3>Gym in central Stockholm</h3>
             <div className="links">
-              <ul><li>Live</li></ul>
-              <ul><li>GitHub</li></ul>
-              <ul><li>Figma</li></ul>
-              <ul><li>Case study</li></ul>
+              <ul><div className="border-gradient"><li>Live</li></div></ul>
+              <ul><div className="border-gradient"><li>GitHub</li></div></ul>
+              <ul><div className="border-gradient"><li>Figma</li></div></ul>
+              <ul><div className="border-gradient"><li>Case study</li></div></ul>
             </div>
           </section>
           <section>
             <h2>¡WAKE UP STHMLM!</h2>
             <h3>Gym in central Stockholm</h3>
             <div className="links">
-              <ul><li>Live</li></ul>
-              <ul><li>GitHub</li></ul>
-              <ul><li>Figma</li></ul>
-              <ul><li>Case study</li></ul>
+              <ul><div className="border-gradient"><li>Live</li></div></ul>
+              <ul><div className="border-gradient"><li>GitHub</li></div></ul>
+              <ul><div className="border-gradient"><li>Figma</li></div></ul>
+              <ul><div className="border-gradient"><li>Case study</li></div></ul>
             </div>
           </section>
           <section>
             <h2>¡WAKE UP STHMLM!</h2>
             <h3>Gym in central Stockholm</h3>
             <div className="links">
-              <ul><li>Live</li></ul>
-              <ul><li>GitHub</li></ul>
-              <ul><li>Figma</li></ul>
-              <ul><li>Case study</li></ul>
+              <ul><div className="border-gradient"><li>Live</li></div></ul>
+              <ul><div className="border-gradient"><li>GitHub</li></div></ul>
+              <ul><div className="border-gradient"><li>Figma</li></div></ul>
+              <ul><div className="border-gradient"><li>Case study</li></div></ul>
             </div>
           </section>
           <section>
             <h2>¡WAKE UP STHMLM!</h2>
             <h3>Gym in central Stockholm</h3>
             <div className="links">
-              <ul><li>Live</li></ul>
-              <ul><li>GitHub</li></ul>
-              <ul><li>Figma</li></ul>
-              <ul><li>Case study</li></ul>
+              <ul><div className="border-gradient"><li>Live</li></div></ul>
+              <ul><div className="border-gradient"><li>GitHub</li></div></ul>
+              <ul><div className="border-gradient"><li>Figma</li></div></ul>
+              <ul><div className="border-gradient"><li>Case study</li></div></ul>
             </div>
           </section>
           <section>
             <h2>¡WAKE UP STHMLM!</h2>
             <h3>Gym in central Stockholm</h3>
             <div className="links">
-              <ul><li>Live</li></ul>
-              <ul><li>GitHub</li></ul>
-              <ul><li>Figma</li></ul>
-              <ul><li>Case study</li></ul>
+              <ul><div className="border-gradient"><li>Live</li></div></ul>
+              <ul><div className="border-gradient"><li>GitHub</li></div></ul>
+              <ul><div className="border-gradient"><li>Figma</li></div></ul>
+              <ul><div className="border-gradient"><li>Case study</li></div></ul>
             </div>
           </section>
           <section>
             <h2>¡WAKE UP STHMLM!</h2>
             <h3>Gym in central Stockholm</h3>
             <div className="links">
-              <ul><li>Live</li></ul>
-              <ul><li>GitHub</li></ul>
-              <ul><li>Figma</li></ul>
-              <ul><li>Case study</li></ul>
+              <ul><div className="border-gradient"><li>Live</li></div></ul>
+              <ul><div className="border-gradient"><li>GitHub</li></div></ul>
+              <ul><div className="border-gradient"><li>Figma</li></div></ul>
+              <ul><div className="border-gradient"><li>Case study</li></div></ul>
             </div>
           </section>
           <section>
             <h2>¡WAKE UP STHMLM!</h2>
             <h3>Gym in central Stockholm</h3>
             <div className="links">
-              <ul><li>Live</li></ul>
-              <ul><li>GitHub</li></ul>
-              <ul><li>Figma</li></ul>
-              <ul><li>Case study</li></ul>
+              <ul><div className="border-gradient"><li>Live</li></div></ul>
+              <ul><div className="border-gradient"><li>GitHub</li></div></ul>
+              <ul><div className="border-gradient"><li>Figma</li></div></ul>
+              <ul><div className="border-gradient"><li>Case study</li></div></ul>
             </div>
           </section>
           {/* <div className="glass-container"></div>   */}

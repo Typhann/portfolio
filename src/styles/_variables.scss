@@ -12,7 +12,7 @@ $subheader: clamp(1.2rem, 2.5vw, 1.6rem);
 
 $text: clamp(0.8rem, 1.5vw, 1.2rem);
 
-$smallText: clamp(0.6rem, 1.5vw, 0.8rem);
+$smallText: clamp(0.6rem, 1.5vw, 0.6rem);
 
 @mixin flexCenter($direction){
   display: flex;
