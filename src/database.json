@@ -1,0 +1,43 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "title": "Cloudshine",
+      "description": "Weather & news application",
+      "url": "#",
+      "github": "#",
+      "figma": "#",
+      "technologies": "React, CSS",
+      "imgM": "../public/images/M-cloudshine.png",
+      "case": "#",
+      "imgL": "",
+      "imgS": ""
+    },
+    {
+      "id": 1,
+      "title": "Open Library",
+      "description": "Search for any book",
+      "url": "#",
+      "github": "#",
+      "figma": "#",
+      "technologies": "React, CSS",
+      "imgM": "../public/images/M-openlibrary.png",
+      "case": "#",
+      "imgL": "",
+      "imgS": ""
+    },
+    {
+      "id": 2,
+      "title": "¡WAKE UP STHLM!",
+      "description": "Gym in central Stockholm",
+      "url": "#",
+      "github": "#",
+      "figma": "#",
+      "technologies": "HTML, CSS",
+      "imgM": "../public/images/M-wakeupsthml.png",
+      "case": "#",
+      "imgL": "",
+      "imgS": ""
+    }
+  ]
+}
