@@ -8,7 +8,7 @@
       "github": "#",
       "figma": "#",
       "technologies": "React, CSS",
-      "imgM": "../public/images/M-cloudshine.png",
+      "imgM": "../images/M-cloudshine.png",
       "case": "#",
       "imgL": "",
       "imgS": ""
@@ -21,7 +21,7 @@
       "github": "#",
       "figma": "#",
       "technologies": "React, CSS",
-      "imgM": "../public/images/M-openlibrary.png",
+      "imgM": "../images/M-openlibrary.png",
       "case": "#",
       "imgL": "",
       "imgS": ""
@@ -34,7 +34,7 @@
       "github": "#",
       "figma": "#",
       "technologies": "HTML, CSS",
-      "imgM": "../public/images/M-wakeupsthml.png",
+      "imgM": "../images/M-wakeupsthml.png",
       "case": "#",
       "imgL": "",
       "imgS": ""

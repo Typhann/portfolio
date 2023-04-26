@@ -6,6 +6,18 @@
   text-decoration: none;
 }
 
+input {
+  all: unset;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  resize: none; /*remove the resize handle on the bottom right*/
+}
+
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
@@ -103,7 +115,6 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 2.5rem;
 }
 
 header a {
@@ -139,13 +150,13 @@ p {
 }
 
 .scroll-container {
-  width: 50%;
-  height: 500px;
+  min-width: 350px;
+  height: 75vh;
   background: rgba(40, 40, 40, 0.15);
   border-radius: 16px;
   padding-bottom: 2rem;
   overflow: auto;
-  max-height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .scroll-container > * {
   padding: 1rem;
@@ -211,4 +222,62 @@ section:hover {
 }
 .about-nav > a:hover {
   background-color: #323232;
+}
+
+form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(40, 40, 40, 0.15);
+  border-radius: 16px;
+  width: 25vw;
+  min-width: 350px;
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form > * {
+  background-color: #1c1b1b;
+  border-radius: 12px;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+form > *:focus {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+form input {
+  min-width: 15rem;
+}
+form textarea {
+  min-width: 16rem;
+  max-width: 16rem;
+  min-height: 10rem;
+  max-height: 12.5rem;
+  color: rgb(255, 255, 255);
+  font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+}
+form input[type=submit] {
+  color: #8df8f3;
+  margin-top: 2rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+  border-radius: 8px;
+  min-width: 3.4rem;
+  text-align: center;
+  background-image: linear-gradient(#1c1b1b, #1c1b1b), linear-gradient(90deg, #00FFF0, #E2FF6C, #FFC700);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  padding: 0.1rem;
+  min-width: 16rem;
+  font-weight: 700;
+}
+form input[type=submit]:hover {
+  animation: gradientSpin 0.5s infinite ease;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

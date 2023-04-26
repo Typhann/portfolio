@@ -17,9 +17,9 @@ export default function About(){
       initial={{opacity: 0}} 
       animate={{opacity: 1}} 
       transition={{duration: 0.75, ease: "easeOut"}}>
-        <h1>About</h1>
         <div className="main-container">
           <div className="scroll-container">
+          <h1>About</h1>
             <nav className="about-nav">
             <NavLink to={"."} end  style={({ isActive }) => isActive ? activeStyle : null}>Intro</NavLink>
             <NavLink to={"techstack"}  style={({ isActive }) => isActive ? activeStyle : null}>Techstack</NavLink>

@@ -43,16 +43,14 @@ export default function Projects(){
       initial={{opacity: 0}} 
       animate={{opacity: 1}} 
       transition={{duration: 0.75, ease: "easeOut"}}>
-        <h1>Projects</h1>     
         <div className="main-container">
           <div className="scroll-container">
+          <h1>Projects</h1>     
           {renderProjects}
           {/* <div className="glass-container"></div>   */}
           </div>
           <img src={image} width={"50%"} />   
-        </div>
-       
-        
+        </div>      
       </motion.div>
     </>
    
