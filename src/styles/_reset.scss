@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,7 +7,7 @@
   // border: 1px solid rgb(55, 55, 55);
 }
 
-input{
+input {
   all: unset;
 }
 textarea {
@@ -23,23 +23,23 @@ textarea {
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: auto;
-    // scrollbar-color: #141414;
-  }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  // scrollbar-color: #141414;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 16px;
-  }
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
 
-  *::-webkit-scrollbar-track {
-    background: #1b1919;
-  }
+*::-webkit-scrollbar-track {
+  background: #1b1919;
+}
 
-  *::-webkit-scrollbar-thumb {
-    background-color: #151414;
-    border-radius: 10px;
-    border: 3px solid #1b1919;
-  }
+*::-webkit-scrollbar-thumb {
+  background-color: #151414;
+  border-radius: 10px;
+  border: 3px solid #1b1919;
+}

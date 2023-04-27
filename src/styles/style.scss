@@ -1,9 +1,7 @@
-@import './variables';
-@import './reset';
+@import "./variables";
+@import "./reset";
 
-
-
-body{
+body {
   background: $backgroundColor;
   font-family: $font;
   // display: flex;
@@ -14,46 +12,51 @@ body{
   font-size: 62.5%;
 }
 
-.site-wrapper{
+.site-wrapper {
   max-width: 1440px;
   // border: 2px solid blue;
   margin: 0 auto;
   // position: absolute;
 }
 
-h2,h3,h4,p,a, ul {
+h2,
+h3,
+h4,
+p,
+a,
+ul {
   color: $blue;
-  li{
+  li {
     font-size: $smallText;
   }
 }
 
-h1{
+h1 {
   background: $gradientColor;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: $header;
   background-clip: text;
-  span{
+  span {
     display: block;
-   &:nth-child(2){
-    margin-top: -2rem;
-  }
+    &:nth-child(2) {
+      margin-top: -2rem;
+    }
   }
   // text-fill-color: transparent;
 }
-h2{
+h2 {
   font-size: $subheader;
 }
-h3,p{
+h3,
+p {
   font-size: $text;
 }
-h4{
+h4 {
   font-size: $smallText;
 }
 
-
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,21 +66,21 @@ header{
   padding: 2.5rem;
 }
 
-main{
+main {
   @include flexCenter(column);
   width: 100%;
   padding: 5rem;
 }
 
-.hero{
+.hero {
   display: flex;
-  > *{
+  > * {
     min-width: 50%;
     // border: 2px solid red;
   }
 }
 
-.main-container{
+.main-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,19 +90,19 @@ main{
   // width: 200%;
 }
 
-header a{
+header a {
   margin: 0.5rem;
 }
 
-p{
+p {
   font-size: $text;
 }
-.button{
+.button {
   @include flexCenter(row);
   width: 150px;
   height: 65px;
   border-radius: 50px;
-  background: #E6F85E;
+  background: #e6f85e;
   font-weight: 700;
   margin-top: 5rem;
   font-size: 1.25rem;
@@ -107,19 +110,21 @@ p{
   margin: 0 auto;
 }
 
-.gradient{
-  height: 260vh;  
+.gradient {
+  height: 260vh;
   width: 100vw;
   position: absolute;
   z-index: -1;
-  background: radial-gradient(44.07% 107.38% at 85.73% 79.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(
+    44.07% 107.38% at 85.73% 79.72%,
+    rgba(148, 255, 0, 0.1) 0%,
+    rgba(125, 233, 149, 0.0421812) 64.2%,
+    rgba(255, 255, 255, 0) 100%
+  );
   // background: radial-gradient(44.07% 107.38% at 15.73% 99.72%, rgba(148, 255, 0, 0.1) 0%, rgba(125, 233, 149, 0.0421812) 64.2%, rgba(255, 255, 255, 0) 100%);
 }
 
-
-
-
-.scroll-container{
+.scroll-container {
   // width: 50rem;
   min-width: 350px;
   height: 75vh;
@@ -128,74 +133,73 @@ p{
   padding-bottom: 2rem;
   overflow: auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  >*{
+  > * {
     padding: 1rem;
   }
   // max-height: 350px;
 }
 
-.links{
+.links {
   display: flex;
-  li{
+  li {
     padding: 0.1rem;
     // margin: 1rem;
   }
-  .border-gradient{
+  .border-gradient {
     margin: 0.5rem 0.5rem 0rem 0rem;
     @include borderGradient;
     margin: 0.25rem 0.25rem 0.25rem 0rem;
   }
 }
 
-@keyframes gradientSpin{
-  0%{
-    background-image: linear-gradient(#1c1b1b,#1c1b1b),
-    linear-gradient(90deg,#00FFF0, #E2FF6C, #FFC700);
+@keyframes gradientSpin {
+  0% {
+    background-image: linear-gradient(#1c1b1b, #1c1b1b),
+      linear-gradient(90deg, #00fff0, #e2ff6c, #ffc700);
   }
-  33%{
-    background-image: linear-gradient(#1c1b1b,#1c1b1b),
-    linear-gradient(90deg,#FFC700, #00FFF0, #E2FF6C);
+  33% {
+    background-image: linear-gradient(#1c1b1b, #1c1b1b),
+      linear-gradient(90deg, #ffc700, #00fff0, #e2ff6c);
   }
-  66%{
-    background-image: linear-gradient(#1c1b1b,#1c1b1b),
-    linear-gradient(90deg,#E2FF6C, #FFC700, #00FFF0);
+  66% {
+    background-image: linear-gradient(#1c1b1b, #1c1b1b),
+      linear-gradient(90deg, #e2ff6c, #ffc700, #00fff0);
   }
-  100%{
-    background-image: linear-gradient(#1c1b1b,#1c1b1b),
-    linear-gradient(90deg,#00FFF0, #E2FF6C, #FFC700);
+  100% {
+    background-image: linear-gradient(#1c1b1b, #1c1b1b),
+      linear-gradient(90deg, #00fff0, #e2ff6c, #ffc700);
   }
 }
 
-h2{
-  color: #2FCCEE;
+h2 {
+  color: #2fccee;
 }
 
-section{
+section {
   // border: 2px solid red;
 
   border-radius: 25px;
   margin: 0.5rem;
-  &:hover{
+  &:hover {
     background-color: #1c1b1b;
     // background-color: #171717;
   }
 }
 
-
-.about-nav{
+.about-nav {
   margin: 1rem 1rem 1rem 0rem;
   > a {
     padding: 0.5rem;
     margin: 0.25rem;
     background-color: #242424;
     border-radius: 12px;
-    &:hover{
+    &:hover {
       background-color: #323232;
     }
   }
 }
 
-form{
+form {
   color: white;
   display: flex;
   flex-direction: column;
@@ -209,20 +213,21 @@ form{
   font-size: $text;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   @include flexCenter(column);
-  > *{
+  > * {
     background-color: #1c1b1b;
     border-radius: 12px;
     padding: 0.5rem;
     margin: 0.5rem;
-    &:focus{
+    &:focus {
       // border: 1px solid rgb(53, 53, 53);
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px,
+        rgb(51, 51, 51) 0px 0px 0px 3px;
     }
   }
-  input{
+  input {
     min-width: 15rem;
   }
-  textarea{
+  textarea {
     min-width: 16rem;
     max-width: 16rem;
     // height: 150px;
@@ -231,7 +236,7 @@ form{
     color: rgb(255, 255, 255);
     font-size: $text;
   }
-  input[type=submit]{
+  input[type="submit"] {
     color: $blue;
     margin-top: 2rem;
     height: 2.5rem;
@@ -239,5 +244,5 @@ form{
     @include borderGradient;
     min-width: 16rem;
     font-weight: 700;
-  } 
+  }
 }
